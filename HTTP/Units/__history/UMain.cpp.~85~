@@ -1,0 +1,152 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "UMain.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma link "SHDocVw_OCX"
+#pragma resource "*.dfm"
+TForm2 *Form2;
+//---------------------------------------------------------------------------
+__fastcall TForm2::TForm2(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm2::Button1Click(TObject *Sender)
+{
+//	WideString sPath = "ya.ru";
+//	WideString sPath = "yandex.ru";
+	WideString sPath = "about:blank";
+//	CppWebBrowser1->Navigate( StringToOleStr(sPath) );
+//	EdgeBrowser1->Navigate( sPath );
+//	WebBrowser1->Navigate( sPath );
+//Variant(WebBrowser1->Document).OlePropertyGet("body").OlePropertySet("outerHTML", "werwrwr");
+//	WebBrowser1->Document.
+//	WebBrowser1->Navigate("ffff4");
+//	IdHTTP1->Get(sPath);
+//	WebBrowser1->Document;
+//	WebBrowser1->Document->Text;
+//	WebBrowser1->OleObject->Document;
+
+/*
+TMemoryStream *stm = new TMemoryStream();
+char s[] = "<html><head><title>Личная страница </title></head><body>Это мой первый сайт.\
+<br>\
+<a href='https://yandex.ru/'> Перейти на yandex </a>\
+</body></html>" ;
+for (int i=0 ; i < sizeof(s); ++i)
+	stm->Write(&s[i],sizeof(char));
+stm->Seek(0,0);
+IPersistStreamInit *psi;
+//TStreamAdapter *sa = new TStreamAdapter(stm,soReference);
+_di_IStream sa(*(new TStreamAdapter(stm, soReference)));
+CppWebBrowser1->Navigate(sPath.c_bstr());
+if (SUCCEEDED(CppWebBrowser1->Document->QueryInterface(IID_IPersistStreamInit,(void **)&psi)))
+{
+	psi->Load(sa);
+	psi->Release();
+}
+delete stm;
+*/
+//	V();
+	ExcelInit("D:\\myProj\\HTTP\\1.xls");
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm2::WebBrowser1DocumentComplete(TObject *ASender, IDispatch * const pDisp,
+		  const OleVariant &URL)
+{
+//	Memo1->Text = Variant(WebBrowser1->Document).OlePropertyGet("body").OlePropertyGet("parentElement").OlePropertyGet("outerHTML");
+//	Variant(WebBrowser1->Document).OlePropertyGet("body").OlePropertyGet("parentElement").OlePropertyGet("outerHTML");
+//Variant(WebBrowser1->Document).OlePropertyGet("body").OlePropertyGet("parentElement").OlePropertySet("outerHTML", "werwrwr");
+}
+//---------------------------------------------------------------------------
+
+
+
+
+void TForm2::V(){
+		Variant MyExcel, Bs;
+		MyExcel = CreateOleObject("Excel.Application");
+		Bs = MyExcel.Exec(PropertyGet("WorkBooks"));
+//		Bs.Exec(Function("Open") << L"D:\\\\myProj\\HTTP\\1.xls");
+//        Bs.OleProp
+		Bs.OlePropertyGet("WorkBooks").OleProcedure("Open", "D:\\myProj\\HTTP\\1.xls");
+/*
+		MyExcel.OlePropertyGet("WorkBooks").OleProcedure("Open", "D:\\myProj\\HTTP\\1.xls");
+		// получение параметров таблицы: кол-во строк, столбцов
+		int iFirstRow = MyExcel.OlePropertyGet("ActiveSheet").OlePropertyGet("UsedRange").OlePropertyGet("Row");
+		int iFirstCol = MyExcel.OlePropertyGet("ActiveSheet").OlePropertyGet("UsedRange").OlePropertyGet("Column");
+		int iRowsCount = MyExcel.OlePropertyGet("ActiveSheet").OlePropertyGet("UsedRange").OlePropertyGet("Rows").OlePropertyGet("Count");
+		int iColsCount = MyExcel.OlePropertyGet("ActiveSheet").OlePropertyGet("UsedRange").OlePropertyGet("Columns").OlePropertyGet("Count");
+
+		// вывод параметров таблицы в Memo
+		Memo1->Lines->Add("iFirstRow = " + String(iFirstRow));
+		Memo1->Lines->Add("iFirstCol = " + String(iFirstCol));
+		Memo1->Lines->Add("iRowsCount = " + String(iRowsCount));
+		Memo1->Lines->Add("iColsCount = " + String(iColsCount));
+
+		// задаю параметры для StringGrid
+		StringGrid1->FixedCols = 0;
+		StringGrid1->FixedRows = 0;
+		StringGrid1->RowCount = iRowsCount;
+		StringGrid1->ColCount = iColsCount;
+
+		// заполнение StringGrid значениями из Excel-таблицы
+		Variant vCells = MyExcel.OlePropertyGet("Cells");
+
+		for ( int i = iFirstRow; i < iFirstRow+iRowsCount; i++ )
+		{
+				for ( int j = iFirstCol; j < iFirstCol+iColsCount; j++ )
+				{
+						int iValue = vCells.OlePropertyGet("Item", i, j);
+						StringGrid1->Cells[j-iFirstCol][i-iFirstRow] = iValue;
+				}
+		}
+ */
+		MyExcel.OleProcedure("Quit"); // закрытие Excel}
+}
+
+
+
+
+void __fastcall TForm2::ExcelInit(WideString ffile)
+{
+/*
+Variant App,Sh;
+// если Excel запущен — подключиться к нему
+try {
+App=Variant::GetActiveObject("Excel.Application");
+} catch(...) {
+// Excel не запущен — запустить его
+try { App=Variant::CreateObject("Excel.Application"); } catch (...) {
+Application->MessageBox(L"Невозможно открыть Microsoft Excel! Возможно Excel не установлен на компьютере.",L"Ошибка",MB_OK+MB_ICONERROR);
+} }
+try {
+Application->MessageBox(ffile.c_bstr(), L"F I L E",MB_OK);
+if(ffile!="")
+App.OlePropertyGet("WorkBooks").OleProcedure("Open", ffile.c_bstr());
+else
+App.OlePropertyGet("WorkBooks").OleProcedure("add");
+Sh=App.OlePropertyGet("WorkSheets",1);
+} catch(...) {
+Application->MessageBox(L"Ошибка открытия книги Microsoft Excel!", L"Ошибка",MB_OK+MB_ICONERROR);
+}
+*/
+Variant Excel;
+Variant Book;
+Variant Sheet;
+
+Excel=CreateOleObject("Excel.Application");
+Excel.OlePropertySet("Visible",true);  //чтобы сделать Excel видимой, нужно раскоментировать строку
+Book=Excel.OlePropertyGet("Workbooks").OlePropertyGet("Open", ffile); //открываем книгу, указав её имя
+Sheet=Book.OlePropertyGet("Worksheets", 1); //выбираем № активного листа книги
+Sheet.OlePropertyGet("Range", "A1");
+//this->StringGrid1->Cells[0][0]=Sheet.OlePropertyGet("Range", "A1"); //выводим в StringGrid1 из Excel значение ячейки А1
+//
+Excel.OleProcedure("Quit");  //без неё EXCEL.exe не закроется, если не делали её видимой
+
+}/* ExcelInit() */
