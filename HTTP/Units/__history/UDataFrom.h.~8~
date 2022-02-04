@@ -1,0 +1,23 @@
+//---------------------------------------------------------------------------
+
+#ifndef UDataFromH
+#define UDataFromH
+
+
+#include <System.Classes.hpp>
+
+
+class GetData{
+
+	public:
+		enum typeReceiving{tFile, tDb};
+		GetData(){}
+		GetData(typeReceiving tr, WideString sPath);
+
+	private:
+		WideString sPath;
+};
+
+
+//---------------------------------------------------------------------------
+#endif

@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------
+
+#ifndef UGetDataFromFileH
+#define UGetDataFromFileH
+
+#include "UDataFrom.h"
+
+
+class GetDataFromFile : public GetDataFrom{
+    GetDataFromFile();
+	WideString getData(){return "CHILD";}
+};
+
+
+//---------------------------------------------------------------------------
+#endif

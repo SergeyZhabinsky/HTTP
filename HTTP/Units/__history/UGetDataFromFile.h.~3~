@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#ifndef UGetDataFromFileH
+#define UGetDataFromFileH
+
+class GetDataFromFile{
+    GetDataFromFile();
+	WideString getData(){return "CHILD";}
+};
+
+
+//---------------------------------------------------------------------------
+#endif

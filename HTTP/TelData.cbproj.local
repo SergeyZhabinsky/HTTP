@@ -2,12 +2,18 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>1899.12.30 00:00:00.000.287,=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.138,D:\myProj\HTTP\Units\UMain.cpp=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.638,D:\myProj\HTTP\TelData.cbproj=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.138,D:\myProj\HTTP\Units\UMain.dfm=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.138,D:\myProj\HTTP\Units\UMain.h=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Unit2.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.619,D:\myProj\HTTP\TelDataPCH1.h=D:\myProj\HTTP\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.257,D:\myProj\HTTP\Project1PCH1.h=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.638,C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Project1.cbproj=D:\myProj\HTTP\TelData.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.138,C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Unit2.cpp=D:\myProj\HTTP\Units\UMain.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.138,C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Unit2.dfm=D:\myProj\HTTP\Units\UMain.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.138,C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Unit2.h=D:\myProj\HTTP\Units\UMain.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.619,D:\myProj\HTTP\Project1PCH1.h=D:\myProj\HTTP\TelDataPCH1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.104,=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.257,C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=D:\myProj\HTTP\Project1PCH1.h</Transaction>
+    <Transaction>2022.01.31 11:14:30.555,=Z:\HTTP\HTTP\Unit1.cpp</Transaction>
+    <Transaction>2022.01.31 11:23:13.370,Z:\HTTP\HTTP\Units\UDataFrom.h=Z:\HTTP\HTTP\Unit1.h</Transaction>
+    <Transaction>2022.01.31 11:23:13.370,Z:\HTTP\HTTP\Units\UDataFrom.cpp=Z:\HTTP\HTTP\Unit1.cpp</Transaction>
+    <Transaction>2022.01.31 12:12:13.701,=Z:\HTTP\HTTP\Unit1.cpp</Transaction>
+    <Transaction>2022.01.31 12:15:08.228,Z:\HTTP\HTTP\Units\UGetDataFromFile.h=Z:\HTTP\HTTP\Unit1.h</Transaction>
+    <Transaction>2022.01.31 12:15:08.228,Z:\HTTP\HTTP\Units\UGetDataFromFile.cpp=Z:\HTTP\HTTP\Unit1.cpp</Transaction>
   </Transactions>
 </BorlandProject>
