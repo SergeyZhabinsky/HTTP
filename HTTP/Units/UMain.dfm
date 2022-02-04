@@ -32,16 +32,15 @@ object Form2: TForm2
     end
   end
   object CppWebBrowser1: TCppWebBrowser
-    Left = 425
+    Left = 249
     Top = 0
-    Width = 159
+    Width = 23
     Height = 144
     Align = alClient
     TabOrder = 1
-    ExplicitWidth = 300
-    ExplicitHeight = 150
+    ExplicitWidth = 128
     ControlData = {
-      4C0000006F100000E20E00000000000000000000000000000000000000000000
+      4C00000061020000E20E00000000000000000000000000000000000000000000
       000000004C000000000000000000000001000000E0D057007335CF11AE690800
       2B2E126208000000000000004C0000000114020000000000C000000000000046
       8000000000000000000000000000000000000000000000000000000000000000
@@ -50,7 +49,7 @@ object Form2: TForm2
   object Memo1: TMemo
     Left = 0
     Top = 0
-    Width = 425
+    Width = 249
     Height = 144
     Align = alLeft
     Lines.Strings = (
@@ -58,19 +57,71 @@ object Form2: TForm2
     TabOrder = 2
   end
   object StringGrid1: TStringGrid
-    Left = 584
+    Left = 272
     Top = 0
-    Width = 374
+    Width = 686
     Height = 144
     Align = alRight
+    ColCount = 6
+    FixedCols = 0
+    RowCount = 50
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing]
     TabOrder = 3
+    ExplicitLeft = 278
+    ExplicitTop = -6
     ColWidths = (
+      64
       64
       64
       64
       64
       64)
     RowHeights = (
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
+      24
       24
       24
       24

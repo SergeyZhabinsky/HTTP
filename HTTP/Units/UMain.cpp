@@ -4,6 +4,10 @@
 #pragma hdrstop
 
 #include "UMain.h"
+
+#include "UGetDataFromFile.h"
+#include "UDataFrom.h"
+
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma link "SHDocVw_OCX"
@@ -52,7 +56,13 @@ if (SUCCEEDED(CppWebBrowser1->Document->QueryInterface(IID_IPersistStreamInit,(v
 delete stm;
 */
 //	V();
-	ExcelInit("D:\\myProj\\HTTP\\1.xls");
+//	ExcelInit("D:\\myProj\\HTTP\\1.xls");
+//	ExcelInit("Z:\\HTTP\\HTTP\\1.xls");
+
+	GetDataFromFile gdFromFile("Z:\\HTTP\\HTTP\\1.xls");
+	GetDataFrom &gdf = gdFromFile;
+	Memo1->Text = gdf.getData();
+
 
 }
 //---------------------------------------------------------------------------
@@ -166,6 +176,11 @@ catch (...)
   }
  cnn.OlePropertyGet("Workbooks").OlePropertyGet("Open", ffile.c_bstr());
 
-this->StringGrid1->Cells[0][0]=cnn.OlePropertyGet("Cells",1,1);
+	for(int x=0; x<50; ++x){
+		for(int y=0; y<6; ++y){
+			this->StringGrid1->Cells[y][x]=cnn.OlePropertyGet("Cells",x+1,y+1);
+		}
+	}
+cnn.OleProcedure("Quit"); // закрытие Excel}
 
 }/* ExcelInit() */

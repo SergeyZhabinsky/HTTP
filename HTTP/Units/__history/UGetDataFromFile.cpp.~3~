@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "UGetDataFromFile.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+GetDataFrom(typeReceiving tr, WideString sPath)
+GetDataFromFile :: GetDataFromFile(typeReceiving tr, WideString sPath){
+}
+
