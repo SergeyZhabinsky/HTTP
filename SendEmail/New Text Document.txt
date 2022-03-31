@@ -1,0 +1,5 @@
+пример отправки почты через ssl C++
+https://cpptutor.ru/uroki-programmirovanie/c-builder10/19-programmnyj-sposob-otpravki-pisma-v-s?
+
+https://docwiki.embarcadero.com/RADStudio/Sydney/en/OpenSSL#32-bit_and_64-bit_Windows
+http://slproweb.com/products/Win32OpenSSL.html
