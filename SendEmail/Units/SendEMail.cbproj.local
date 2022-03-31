@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022.03.30 19:37:49.303,=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022.03.30 19:38:01.015,=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2022.03.30 19:39:17.926,D:\myProj\SendEmail\Units\Unit2.h=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Unit2.h</Transaction>
+    <Transaction>2022.03.30 19:39:17.926,D:\myProj\SendEmail\Units\Unit2.dfm=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2022.03.30 19:39:17.926,D:\myProj\SendEmail\Units\Unit2.cpp=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>2022.03.30 19:39:25.797,D:\myProj\SendEmail\Project1PCH1.h=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022.03.30 19:39:39.124,D:\myProj\SendEmail\Units\SendEMailPCH1.h=D:\myProj\SendEmail\Project1PCH1.h</Transaction>
+    <Transaction>2022.03.30 19:39:39.138,D:\myProj\SendEmail\Units\SendEMail.cbproj=C:\Users\Sergey\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
